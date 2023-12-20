@@ -26,7 +26,7 @@ const studenti = [
 
   
 //1
-    let domasna1 = studenti.sort((a,b)=> a.prosek - b.prosek).filter(element => element.ime.endsWith("a") && element.grad == "Skopje" && element.prosek > 7)
+    let domasna1 = studenti.sort((a,b)=> a.ime.localeCompare(b.ime)).filter(element => element.ime.endsWith("a") && element.grad == "Skopje" && element.prosek > 7)
     console.log(domasna1)
 
 //2
