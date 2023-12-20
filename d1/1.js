@@ -26,15 +26,15 @@ const studenti = [
 
   
 //1
-    let domasna1 = studenti.sort((a,b)=> a.ime.localeCompare(b.ime)).filter(element => element.ime.endsWith("a") && element.grad == "Skopje" && element.prosek > 7)
+    let domasna1 = studenti.filter(element => element.ime.endsWith("a") && element.grad == "Skopje" && element.prosek > 7).sort((a,b)=> a.ime.localeCompare(b.ime))
     console.log(domasna1)
 
 //2
-    let domasna2 = studenti.sort((a,b)=> b.prosek - a.prosek).filter(element => element.grad !== "Skopje" && element.prosek > 9)
+    let domasna2 = studenti.filter(element => element.grad !== "Skopje" && element.prosek > 9).sort((a,b)=> b.prosek - a.prosek)
     console.log(domasna2)
 
 //3
-    let domasna3 = studenti.sort((a,b)=> b.prosek - a.prosek).filter(element => element.ime.length == 5).slice(0,3)
+    let domasna3 = studenti.filter(element => element.ime.length == 5).slice(0,3).sort((a,b)=> b.prosek - a.prosek)
     console.log(domasna3)
 
 //4
