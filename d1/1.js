@@ -34,7 +34,7 @@ const studenti = [
     console.log(domasna2)
 
 //3
-    let domasna3 = studenti.sort((a,b)=> b.prosek - a.prosek).filter(element => element.ime.length <= 5).slice(0,3)
+    let domasna3 = studenti.sort((a,b)=> b.prosek - a.prosek).filter(element => element.ime.length == 5).slice(0,3)
     console.log(domasna3)
 
 //4
