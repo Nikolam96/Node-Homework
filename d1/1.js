@@ -26,14 +26,12 @@ const studenti = [
 
   
 //1
-    let domasna1 = studenti.filter(element => {
-        if(element.ime.endsWith("a") && element.grad == "Skopje" && element.prosek > 7){console.log(element)}
-    })
+    let domasna1 = studenti.filter(element => element.ime.endsWith("a") && element.grad == "Skopje" && element.prosek > 7)
+    console.log(domasna1)
 
 //2
-    let domasna2 = studenti.sort((a,b)=> b.prosek - a.prosek).filter(element => {
-        if(element.grad !== "Skopje" && element.prosek > 9){ console.log(element)}
-    })
+    let domasna2 = studenti.sort((a,b)=> b.prosek - a.prosek).filter(element => element.grad !== "Skopje" && element.prosek > 9)
+    console.log(domasna2)
 
 //3
     let domasna3 = studenti.sort((a,b)=> b.prosek - a.prosek).filter(element => element.ime.length <= 5).slice(0,3)
