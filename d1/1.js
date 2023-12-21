@@ -42,7 +42,7 @@ const studenti = [
      console.log(domasna4)
 
 //5
-    let domasna5 = studenti.filter(element => element.grad == "Skopje" || element.grad == "Tetovo" || element.grad == "Kichevo").reduce((acc,value)=>{return acc+value.prosek},0)
+    let domasna5 = studenti.filter(element => element.grad == "Skopje" || element.grad == "Tetovo" || element.grad == "Kichevo").reduce((acc,value)=>{return acc+value.prosek},0)/studenti.filter(element => element.grad == "Skopje" || element.grad == "Tetovo" || element.grad == "Kichevo").length
     console.log(domasna5)
     
 //6
