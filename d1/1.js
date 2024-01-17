@@ -43,7 +43,7 @@ const studenti = [
 
 //5
     let domasna5 = studenti.filter(element => element.grad == "Skopje" || element.grad == "Tetovo" || element.grad == "Kichevo").reduce((acc,value)=>{return acc+value.prosek},0)/studenti.filter(element => element.grad == "Skopje" || element.grad == "Tetovo" || element.grad == "Kichevo").length
-    console.log(domasna5)
+    console.log(domasna5 + "ova je zadaca broj 5")
     
 //6
     let domasna6 = studenti.push({ ime: 'Goran', prosek: 8.3, grad: 'Strumica' })
